@@ -16,11 +16,38 @@
                 </div>
             </div>
     <!--Start button-->
-    <div class= "button"> <button> Start Quiz </button></div>
-    <P> Welcome To Learning Java Script here are some questions to see what you know.    
-    </P>
-    <div class="container">
+        <header id="first-screen" class="Large-padding">
+                <h1>Learning JavaScript Quiz</h1>
 
+    <P> Welcome To Learning Java Script here are some questions to see what you know. Let's get Started, Press 'Start Quiz'</P>
+        <button class="start-quiz-button green-nav-button" id="start-quiz-button"> Start Quiz </button>
+    <div class="container">
+   <main>
+    <section aria-activedescendant="question-title" id="question-screen" class="question-screen medium-padding">
+        <h2 id="question-title" class="question-title"></h2>
+
+   <footer id="question feedback" class="question-feedback">
+     <p>nope!❌</p>
+   </footer>
+   </section>
+        <section aria-activedescendant="quiz-complete" id="finish-page" class="finish-screen">
+            <h2 id="=quiz-complete-title"> All Done!</h2>
+            <p> Your results:0</p>
+            <div id="score-entry" class="score-entry">
+                <label for="">Enter initials:</label>
+                <input type="text" placeholder="Initials Here">
+                <button class="green-nav-button"></button>
+            </div>
+        </section>
+
+
+
+
+
+    <section aria-activedescendant="highscores-title" id="hignscores-page" class="highscores-page">
+        <h2 id ="highscores-title">Highscores:</h2>
+    </section>
+    </section>
         <div class="box" data-number="1" data-state="hidden"></div>
             <div id="box"
         <div class="box" data-number="1" data-state="hidden"></div>
