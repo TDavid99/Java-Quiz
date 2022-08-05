@@ -6,6 +6,9 @@
     box-sizing: border-box;
 
 }
+body{
+    background-color: orange;
+}
 
 #top-section-info{
     display: flex;
@@ -37,5 +40,5 @@ style{
 .pargraph{
     display: flex;
     justify-content: center;
-    
+
 }
