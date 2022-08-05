@@ -1,0 +1,41 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+#top-section-info{
+    display: flex;
+    justify-content: space-between;
+    margin: 36px;
+    color: purple;
+
+}
+#top-section-info button{
+    padding: 10px;
+    color: purple;
+    
+
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    color: gold;
+}
+style{
+    display: flex;
+    justify-content: center;
+}
+#start-quiz-button{
+    display: flex;
+    justify-content: center;
+}
+.pargraph{
+    display: flex;
+    justify-content: center;
+    
+}
