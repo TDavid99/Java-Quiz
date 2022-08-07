@@ -34,11 +34,15 @@ style{
     justify-content: center;
 }
 #start-quiz-button{
+    color: purple;
+    margin: 25px;
     display: flex;
     justify-content: center;
 }
 .pargraph{
+    flex-direction: column;
     display: flex;
+    align-items: center;
     justify-content: center;
 
 }
