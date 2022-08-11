@@ -1,5 +1,5 @@
 const highscore_page = document.getElementById("");
-const
+const 
 
 
 

@@ -12,7 +12,7 @@
 <body>
     <h2 id="countdown"></h2>
     <div class="top-section">
-        <p id="timer">00:00</p>
+        <p id="timerElement">00:00</p>
         <nav>
             <button a href="pindex.html">Highscores</button>
         </nav>
@@ -29,35 +29,38 @@
 
 
             <div class="start_btn"><button>Start Quiz</button>
-            <a href="./assets/js/pscript.js"> Start</a></div>
+                <!-- <a href="./assets/js/pscript.js"> Start</a></div> -->
 
-            <div class="instructions_box">
-                <div class="instr_title">
-                    <span> Instructions Before You Start </span>
-                </div>
-                <div class="instr_list">
-                    <div class="instr"> 1.Timed Quiz.</div>
-                    <div class="instr"> 2.Every question you miss will subtract from clock.</div>
-                    <div class="instr"> 3. When all questions are answered or timer reach 0 the quiz is over.</div>
-                </div>
-                <div class="question">
-                    <span>What commonly used data types Do Not include?</span>
-                </div>
-                <div class="choices_list">
-                    <div class="choices">
-                        <span>Booleans</span>
+                <div id="instructions_box">
+                    <div class="instr_title">
+                        <span> Instructions Before You Start </span>
                     </div>
-                    <div class="choices"></div>
-                    <span>Strings</span>
-                    <div class="checkmark"><i class="fas fa-check"></i></div>
+                    <div class="instr_list">
+                        <div class="instr"> 1.Timed Quiz.</div>
+                        <div class="instr"> 2.Every question you miss will subtract from clock.</div>
+                        <div class="instr"> 3. When all questions are answered or timer reach 0 the quiz is over.</div>
+                    </div>
                 </div>
-                <div class="choices">
-                    <span>Alerts</span>
+                <div id='question-container'>
+                    <div class="question">
+                        <span>What commonly used data types Do Not include?</span>
+                    </div>
+                    <div class="choices_list">
+                        <div class="choices">
+                            <span>Booleans</span>
+                        </div>
+                        <div class="choices"></div>
+                        <span>Strings</span>
+                        <div class="checkmark"><i class="fas fa-check"></i></div>
+                    </div>
+                    <div class="choices">
+                        <span>Alerts</span>
+                    </div>
+                    <div class="choices">
+                        <span>Numbers</span>
+                    </div>
+                    <br>
                 </div>
-                <div class="choices">
-                    <span>Numbers</span>
-                </div>
-                <br>
 
                 <div class="buttons">
                     <button class="exit"> Restart Quiz</button>
@@ -68,9 +71,8 @@
                         <h2 id="question-title" class="question-title"></h2>
 
                     </footer>
-            </div>
-            <div class="questions"></div>
-            <script src="./assets/js/script.js"></script>
+                    <div class="questions"></div>
+                    <script src="./assets/js/script.js"></script>
 </body>
 
 </html>

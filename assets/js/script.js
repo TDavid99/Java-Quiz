@@ -2,10 +2,10 @@ console.log ("connected")
 
 
 var head = document.getElementsByTagName('head')[0];
-var link = document.createElement('')
-link.rel = '';
-link.type= '';
-link.href = '';
+// var link = document.createElement('')
+// link.rel = '';
+// link.type= '';
+// link.href = '';
 
 let questions = [
     {
@@ -91,47 +91,56 @@ let questions = [
 
 
 var counter = 0;
-var timeLeft = 65;
+var timeLeft = 100;
 
 
-function nf(min,sec){
+// function nf(min,sec){
 
-}
-function convertSeconds(s) {
-    var min = Math.floor(s/60);
-    var sec = s % 60;
-    return nf (min,2) + ':' + nf(sec,2);
-}
-function setup() {
- //   noCanvas();
+// }
+// function convertSeconds(s) {
+//     var min = Math.floor(s/60);
+//     var sec = s % 60;
+//     return nf (min,2) + ':' + nf(sec,2);
+// }
+// function setup() {
+//  //   noCanvas();
 
-    continue_btn.addEventListener('click', function(){
-        choice_div.textContent = question[i].questions
-    })
+//     continue_btn.addEventListener('click', function(){
+//         choice_div.textContent = question[i].questions
+//     })
 
-    var timer = document.querySelector('#timer');
-    timer.html(convertSeconds(timeLeft-counter));
+//     var timer = document.querySelector('#timer');
+//     timer.html(convertSeconds(timeLeft-counter));
 
-    function timerIt(){
-        counter++;
-        timer.html(convertSeconds)(timeleft - counter);
+//     function timerIt(){
+//         counter++;
+//         timer.html(convertSeconds)(timeleft - counter);
 
-    }
-    setInterval(timerIt, 1000);
-}
+//     }
+//     setInterval(timerIt, 1000);
+// }
 
 
 
 const start_btn = document.querySelector(".start_btn button");
 const question_div = document.querySelector(".que_text");
-//const instrutions_box = document.querySelector("instructions_box");
+const instructions_box = document.querySelector("#instructions_box");
+const question_container = document.querySelector("#question-container");
+const timerElement = document.querySelector("#timerElement");
 //const exit_btn = instructions_box.querySelector(".buttons . exit");
 const continue_btn = document.querySelector(".continue");
 
-start_btn.addEventListener("click",function(){
 
-    setup()
-    //instrutions_box.classList.add("activeinst");
+start_btn.addEventListener("click",function(){
+    
+    console.log(instructions_box)
+    instructions_box.style.display = 'none'
+    question_container.style.display = 'block'
+    var timer = setInterval(function() {
+       timeLeft--     
+       timerElement.textContent = timeLeft
+    
+    },1000)
 })
 //exit_btn.addEventListener();{
     //instrutions_box.classList.remove("activeinst");
